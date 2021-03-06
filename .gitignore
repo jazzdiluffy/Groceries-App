@@ -1,0 +1,50 @@
+.DS_Store
+*.xcuserstate
+# xcode
+#
+# gitignore contributors: remember to update global/xcode.gitignore, objective-c.gitignore & swift.gitignore
+
+## user settings
+xcuserdata/
+
+## compatibility with xcode 8 and earlier (ignoring not required starting xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with xcode 3 and earlier (ignoring not required starting xcode 4)
+build/
+deriveddata/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## obj-c/swift specific
+*.hmap
+
+## app packaging
+*.ipa
+*.dsym.zip
+*.dsym
+
+## playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# swift package manager
+#
+# add this line if you want to avoid checking in source code from swift package manager dependencies.
+# packages/
+# package.pins
+# package.resolved
+# *.xcodeproj
+#
+# xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
+
