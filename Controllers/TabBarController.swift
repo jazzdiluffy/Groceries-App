@@ -8,6 +8,8 @@
 import UIKit
 
 class TabBarController: UITabBarController {
+    
+    // MARK: - Properties
     var coordinator: TabBarCoordinator?
     
     let customTabBarView:UIView = {
@@ -29,22 +31,15 @@ class TabBarController: UITabBarController {
         return view
     }()
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        addCustomTabBarView()
-        hideTabBarBorder()
+        setupTabBarControllerUI()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         customTabBarView.frame = tabBar.frame
-    }
-    
-    private func addCustomTabBarView() {
-        customTabBarView.frame = tabBar.frame
-        view.addSubview(customTabBarView)
-        view.bringSubviewToFront(self.tabBar)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -53,8 +48,17 @@ class TabBarController: UITabBarController {
         self.children.forEach({$0.additionalSafeAreaInsets = newSafeArea})
     }
     
+}
+
+// MARK: - UI Setup
+extension TabBarController {
+    private func addCustomTabBarView() {
+        customTabBarView.frame = tabBar.frame
+        view.addSubview(customTabBarView)
+        view.bringSubviewToFront(self.tabBar)
+    }
     
-    func hideTabBarBorder()  {
+    private func hideTabBarBorder()  {
         let tabBar = self.tabBar
         tabBar.backgroundImage = UIImage.from(color: .clear)
         tabBar.shadowImage = UIImage()
@@ -62,6 +66,8 @@ class TabBarController: UITabBarController {
         
     }
     
-
-    
+    private func setupTabBarControllerUI() {
+        addCustomTabBarView()
+        hideTabBarBorder()
+    }
 }

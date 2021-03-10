@@ -8,8 +8,10 @@
 import UIKit
 
 class CartViewController: UIViewController {
+    // MARK: - Properties
     var coordinator: Coordinator?
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -17,6 +19,7 @@ class CartViewController: UIViewController {
     
 }
 
+// MARK: - UI Setup
 extension CartViewController {
     private func setupUI() {
         if #available(iOS 13.0, *) {

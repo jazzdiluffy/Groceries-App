@@ -8,8 +8,10 @@
 import UIKit
 
 class AccountViewController: UIViewController {
+    // MARK: - Properties
     var coordinator: Coordinator?
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -17,7 +19,7 @@ class AccountViewController: UIViewController {
     
 }
 
-
+// MARK: - UI Setup
 extension AccountViewController {
     private func setupUI() {
         if #available(iOS 13.0, *) {

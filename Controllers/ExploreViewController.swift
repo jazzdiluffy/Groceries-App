@@ -8,8 +8,10 @@
 import UIKit
 
 class ExploreViewController: UIViewController {
+    // MARK: - Properties
     var coordinator: Coordinator?
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -17,6 +19,7 @@ class ExploreViewController: UIViewController {
     
 }
 
+// MARK: - UI Setup
 extension ExploreViewController {
     private func setupUI() {
         if #available(iOS 13.0, *) {

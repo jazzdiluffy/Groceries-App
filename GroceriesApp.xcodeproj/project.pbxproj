@@ -164,13 +164,8 @@
 		42A2919B25EFDCBB0040CF75 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				42A2919C25EFDD080040CF75 /* AppCoordinator.swift */,
-				42A291B225EFE5290040CF75 /* TabBarCoordinator.swift */,
-				42A291BC25EFE6B80040CF75 /* ShopCoordinator.swift */,
-				42F8953425F3F0CE00166DC5 /* ExploreCoordinator.swift */,
-				42F8953925F3F0E200166DC5 /* CartCoordinator.swift */,
-				42F8954825F3F11400166DC5 /* FavouriteCoordinator.swift */,
-				42F8954D25F3F12600166DC5 /* AccountCoordinator.swift */,
+				42AA9C5225F8C82E00D83173 /* Other */,
+				42AA9C5125F8C80800D83173 /* Core */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -186,6 +181,27 @@
 				42F8955225F3F13700166DC5 /* AccountViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		42AA9C5125F8C80800D83173 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				42A2919C25EFDD080040CF75 /* AppCoordinator.swift */,
+				42A291B225EFE5290040CF75 /* TabBarCoordinator.swift */,
+				42A291BC25EFE6B80040CF75 /* ShopCoordinator.swift */,
+				42F8953425F3F0CE00166DC5 /* ExploreCoordinator.swift */,
+				42F8953925F3F0E200166DC5 /* CartCoordinator.swift */,
+				42F8954825F3F11400166DC5 /* FavouriteCoordinator.swift */,
+				42F8954D25F3F12600166DC5 /* AccountCoordinator.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		42AA9C5225F8C82E00D83173 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		42F56BB025F19BDD00E5D521 /* Extentions */ = {

@@ -8,8 +8,10 @@
 import UIKit
 
 class FavouriteViewController: UIViewController {
+    // MARK: - Properties
     var coordinator: Coordinator?
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -17,7 +19,7 @@ class FavouriteViewController: UIViewController {
     
 }
 
-
+// MARK: - UI Setup
 extension FavouriteViewController {
     private func setupUI() {
         if #available(iOS 13.0, *) {
